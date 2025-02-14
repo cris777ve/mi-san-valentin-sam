@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffcccc;
+            padding: 50px;
+        }
+        h1 {
+            color: #d00000;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        .button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #d00000;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Quieres ser mi San Valentín? ❤️</h1>
+    <p>Desde que te conocí, mi vida ha sido más hermosa. Eres lo mejor que me ha pasado y cada día te amo más. </p>
+    <p>Quiero compartir este día especial contigo y demostrarte cuánto te adoro. 💕</p>
+    <button class="button" onclick="mostrarMensaje()">¡Sí, quiero! 💖</button>
+    <button class="button" id="noButton" onclick="eliminarBoton()">No 😭</button>
+
+    <script>
+        function eliminarBoton() {
+            document.getElementById("noButton").style.display = "none";
+        }
+
+        function mostrarMensaje() {
+            alert("¡Me haces la persona más feliz del mundo! ❤️🥰");
+        }
+    </script>
+</body>
+</html>
